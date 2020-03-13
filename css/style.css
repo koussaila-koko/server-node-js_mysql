@@ -1,0 +1,165 @@
+html {
+    background-color: silver;
+    background-image: url('../assets/background-main.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+body {
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right, rgba(124,152,179, 0.5), rgba(99,112,129, 0.5));
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 2px 2px #333;
+    color: white;
+    text-shadow: 1px 1px #333333;
+}
+header{
+    font-family: "USN Stencil", serif !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 1px 1px #333;
+    background-image: linear-gradient(to bottom right, #7F8C8D, #000000);
+    padding: 0;
+    margin: 0.4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p, footer p {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: "USN Stencil", serif !important;
+    font-variant: small-caps;
+    color: white;
+    font-weight: normal;
+    font-size: 3.5rem;
+}
+footer {
+    background-color: #333333;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+section.login {
+    display: flex;
+    width: 70%;
+    flex-flow: row wrap;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 1rem 0;
+}
+section.login > section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 1rem;
+    flex-basis: calc(50% - 2rem);
+}
+.form input {
+    display: block;
+}
+
+.form.config label {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+ul.menu :hover {
+  
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 blue;
+}
+ul.menu  {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+}
+ul.menu li {
+    display: inline-block;
+}
+ul.dashboard li {
+    display: inline-block;
+    
+}
+
+ul.dashboard : hover {
+    
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a.button.linear {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    margin: 0.4rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+canvas.koko {
+    background: url('../assets/koko.jpg') no-repeat;
+    border: 3px ridge silver;
+    font-family: 'Font Awesome 5 Free', serif;
+    font-weight: 900;
+}
+
+
+.button .inactive {
+    color: silver;
+}
+
+.metal {
+    position: relative;
+    margin: 40px auto;
+    outline: none;
+
+    
+    text-align: center;
+    color: blue;
+    
+
+    background-color: #ebe6e6;
+    box-shadow: inset rgba(38, 38, 38,  1) 0  0 0 2px, /* border */
+    inset rgba(38, 38, 38, .8) 0 -1px 5px 3px, /* soft SD */
+    
+    inset rgba(255, 255, 255,.7) 0  2px 1px 6px, /* top HL */
+
+    rgba(0,0, 0,.15) 0 -5px 6px 3px, /* outer SD */
+    rgba(255, 255, 255,.5) 0  5px 6px 3px; /* outer HL */
+
+    
+}
+
+.metal:active {
+    color: rgb(0, 102, 204);
+    text-shadow: rgba(0, 77, 153, .3) 0 -1px 0, #B3D9FF 0 2px 1px, #99DDFF 0 0 5px, rgba(0, 128, 255, 0.6) 0 0 20px;
+    box-shadow:
+            inset rgba(0, 77, 153,  1) 0  0 0 3px, /* border */
+            inset rgba(0, 38, 77, .4) 0 -1px 5px 3px, /* soft SD */
+            inset rgba(0, 51, 102,.25) 0 -1px 0 6px, /* bottom SD */
+            inset rgba(255, 255, 255,.7) 0  2px 1px 6px, /* top HL */
+
+            rgba(128, 191, 255, .8) 0  0 3px 1px, /* outer SD */
+            rgba(51, 102, 153, .25) 0 -5px 6px 3px, /* outer SD */
+            rgba(232, 242, 252,   1) 0  5px 6px 3px; /* outer HL */
+}
+
+
+
+
